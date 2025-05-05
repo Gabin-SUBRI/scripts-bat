@@ -5,4 +5,3 @@ creation_qrcode.bat
 index.bat
 Nettoyage_temp.bat
 speedtest.bat
-test.bat
