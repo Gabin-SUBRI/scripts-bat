@@ -2,21 +2,69 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Mes Scripts Bash</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bash Scripts Collection - Modern Showcase</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="bg-animation"></div>
+
+    <button
+      class="theme-toggle"
+      onclick="toggleTheme()"
+      aria-label="Toggle theme"
+    ></button>
+
     <header>
-      <h1>Bienvenue sur mon dépôt de scripts Bash</h1>
-      <p>Voici une collection de mes scripts utiles</p>
+      <div class="header-content">
+        <h1>Bash Scripts Collection<span class="cursor"></span></h1>
+        <p>
+          Une collection moderne de scripts batch utiles pour automatiser vos
+          tâches quotidiennes
+        </p>
+
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Scripts Disponibles</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Fonctionnels</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Possibilités</div>
+          </div>
+        </div>
+      </div>
     </header>
-    <main id="script-list"></main>
-    <script src="scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-batch.min.js"></script>
+
+    <main>
+      <div class="scripts-grid" id="scripts-container">
+        <!-- Scripts will be generated here -->
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Bash Script. Tous droits réservés à
+        <a id="lien-footer" href="https://www.gabinsubri.com" target="_blank"
+          >Gabin SUBRI</a
+        >.
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="/scripts.js"></script>
   </body>
 </html>
