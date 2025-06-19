@@ -1,0 +1,77 @@
+:root {
+  --color-bg: #1e1e1e;
+  --color-bg-secondary: #2d2d2d;
+  --color-text: #e0e0e0;
+  --color-accent-green: #00ff9f;
+  --color-accent-orange: #ffaa00;
+  --color-border: #444;
+  --color-button-text: #1e1e1e;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background-color: var(--color-bg);
+  margin: 0;
+  padding: 20px;
+  color: var(--color-text);
+}
+
+header {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.script-card {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  flex: 1 1 300px; /* important pour l'effet flex */
+}
+
+button {
+  background-color: var(--color-accent-orange);
+  color: var(--color-button-text);
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.code-block {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: monospace;
+  white-space: pre-wrap;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+  display: none;
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+}
+
+button.toggle-code {
+  margin-left: 10px;
+  background-color: var(--color-accent-green);
+  color: var(--color-button-text);
+}
+
+.script-card h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.script-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

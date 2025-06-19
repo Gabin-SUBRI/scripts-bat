@@ -1,7 +1,0 @@
-creation_bat.bat
-creation_dev.bat
-creation_mdp.bat
-creation_qrcode.bat
-index.bat
-Nettoyage_temp.bat
-speedtest.bat
