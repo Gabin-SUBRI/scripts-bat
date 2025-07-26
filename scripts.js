@@ -137,7 +137,7 @@ pause`,
       "Script automatique de sauvegarde des dossiers utilisateur (Documents, Bureau, Images, Musique, Vidéos, Favoris) sur disque externe. Idéal avant réinitialisation, vente ou don d'un PC.",
     color: "#ff6b6b",
     code: `@echo off
-title Sauvegarde PC Grand-Pere
+title Sauvegarde PC 
 
 echo.
 echo ============================================================

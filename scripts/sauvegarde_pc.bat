@@ -1,5 +1,5 @@
 @echo off
-title Sauvegarde PC Grand-Pere
+title Sauvegarde PC 
 
 echo.
 echo ============================================================
