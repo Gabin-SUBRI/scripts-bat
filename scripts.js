@@ -20,7 +20,7 @@ code "%filename%.bat"`,
     color: "#ff6b6b",
     code: `@echo off
 chcp 65001 >nul
-set "basePath=C:\\Users\\gab74\\OneDrive\\Bureau\\dev"
+set "basePath=C:\\Users\\%username%\\Desktop\\dev"
 set /p foldername="Entrez le nom du projet : "
 set "projectPath=%basePath%\\%foldername%"
 
@@ -126,12 +126,16 @@ pause`,
 chcp 65001 >nul
 cls
 echo Lancement de Speedtest...
-"C:\\Users\\gab74\\Downloads\\ookla-speedtest-1.2.0-win64\\speedtest.exe"
+echo ATTENTION: Modifiez le chemin vers speedtest.exe selon votre installation
+echo Exemple: "C:\\Program Files\\Speedtest\\speedtest.exe"
+pause
+REM Remplacez le chemin ci-dessous par votre installation de speedtest
+REM "C:\\chemin\\vers\\speedtest.exe"
 pause`,
   },
   {
     nom: "Sauvegarde complète PC",
-    type: "Sauvegarde",
+    type: "sauvegarde",
     fichier: "scripts/sauvegarde_pc.bat",
     description:
       "Script automatique de sauvegarde des dossiers utilisateur (Documents, Bureau, Images, Musique, Vidéos, Favoris) sur disque externe. Idéal avant réinitialisation, vente ou don d'un PC.",

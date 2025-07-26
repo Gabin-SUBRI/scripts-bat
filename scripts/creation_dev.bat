@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 >nul
-set "basePath=C:\Users\gab74\OneDrive\Bureau\dev"
+set "basePath=C:\Users\%username%\Desktop\dev"
 set /p foldername="Entrez le nom du projet : "
 set "projectPath=%basePath%\%foldername%"
 
